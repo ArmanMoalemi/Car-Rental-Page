@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="icon" href="../Car Rental imgs/command.png">
+    <link rel="stylesheet" href="Payment Style.css">
+    <link href='https://fonts.googleapis.com/css?family=Plus Jakarta Sans' rel='stylesheet'>
+    <script src="Payment.js"></script>
+</head>
+<body>
+
+    <!-- nav -->
+    <ul class="nav">
+        <li class="navli li-1">
+            <a href="../Car Rental.html" class="company-name">MORENT</a>
+        </li>
+        <li class="navli li-2">
+            <input type="text" class="search-nav" placeholder="Search something here"></input>
+            <button class="search-submit"><img src="../Car Rental imgs/search-normal.png"></button>
+            <button class="filter"><img src="../Car Rental imgs/filter.png"></button>
+        </li>
+        <li class="navli li-3">
+                <a href="#" class="profile res-1"><img src="../Car Rental imgs/like.png" class="profimg like"></a>
+                <a href="#" class="profile res-2"><img src="../Car Rental imgs/notification.png" class="profimg notification"></a>
+                <a href="#" class="profile res-3"><img src="../Car Rental imgs/setting-2.png" class="profimg setting"></a>
+                <a href="#" class="profile fourth"><img src="../Car Rental imgs/prof-img.png" class="profimg profile-image"></a>
+        </li>
+    </ul>
+        <!-- section-1 -->
+    <div class="container-1">
+        <div class="car-summary">
+            <h3 class="header summary-1">
+                Rental Summary
+            </h3>
+            <p class="text alert">
+                Prices may change depending on the length of the rental and the price of your rental car.
+            </p>
+            <div class="container-2">
+                <div class="summary-section-1">
+                    <img src="../Car Rental imgs/car-2-selected.png" alt="" class="car-summary-pic">
+                    <img src="../Car Rental imgs/car-selected-responsive-2.png" alt="" class="car-summary-pic res">
+                </div>
+                <div class="summary-section-2">
+                    <p class="car-name">
+                        Nissan GT - R
+                    </p>
+                    <div class="stars-container">
+                        <div class="review-star">
+                            <button class="star-button"><img src="../Car Rental imgs/colored-star.png" class="stars" alt=""></button>
+                        </div>
+                        <div class="review-star">
+                            <button class="star-button"><img src="../Car Rental imgs/colored-star.png" class="stars" alt=""></button>
+                        </div>
+                        <div class="review-star">
+                            <button class="star-button"><img src="../Car Rental imgs/colored-star.png" class="stars" alt=""></button>
+                        </div>
+                        <div class="review-star">
+                            <button class="star-button"><img src="../Car Rental imgs/colored-star.png" class="stars" alt=""></button>
+                        </div>
+                        <div class="review-star">
+                            <button class="star-button"><img src="../Car Rental imgs/colorless-star.png" class="stars" alt=""></button>
+                        </div>
+                        <div class="review">
+                            440+ Reviewer
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="summary-hr"></div>
+            <div class="text subtotal">
+                Subtotal
+            </div>
+            <div class="subtotal-price">
+                $80.00
+            </div>
+            <div class="text tax">
+                Tax
+            </div>
+            <div class="tax-price">
+                $0
+            </div>
+            <div class="promo-code">
+                <input type="text" class="input-promo-code" placeholder="Apply promo code"></input>
+                <button class="promo-code-apply" onclick="getPromoCode()">
+                    Apply now
+                </button>
+            </div>
+            <div class="header summary-2">
+                Total Rental Price
+            </div>
+            <div class="text overall-text">
+                Overall price and includes rental discount
+            </div>
+            <div class="text overall-text res">
+                Overall price rental
+            </div>
+            <div class="rental-price">
+                $80.00
+            </div>
+
+        </div>
+        <div class="personal-info">
+            <div class="billing-info">
+                <h3 class="header personal">
+                    Billing Info
+                </h3>
+                <p class="text personal-text">
+                    Please enter your billing info
+                </p>
+                <p class="steps">
+                    Step 1 of 4
+                </p>
+                <div class="container-3">
+                    <div class="personal-section">
+                        <div class="inputs">
+                            <label for="">Name<br><br>
+                                <input type="text" class="input-personal" placeholder="Your name"></input>
+                            </label>
+                        </div>
+                        <div class="inputs">
+                            <label for="">Phone Number<br><br>
+                                <input type="number" class="input-personal" placeholder="Phone number"></input>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="personal-section">
+                        <div class="inputs">
+                            <label for="">Address<br><br>
+                                <input type="text" class="input-personal" placeholder="Address"></input>
+                            </label>
+                        </div>
+                        <div class="inputs">
+                            <label for="">Town / City<br><br>
+                                <input type="text" class="input-personal" placeholder="Town or city"></input>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rental-info">
+                <h3 class="header personal">
+                    Rental info
+                </h3>
+                <p class="text personal-text">
+                    Please select your rental date
+                </p>
+                <p class="steps">
+                    Step 2 of 4
+                </p>
+                <label for="pick-up" class="rental-label">
+                    <input type="radio" class="rental-radio pick" name="one" id="pick-up">Pick - Up
+                </label>
+                <div class="container-4">
+                    <div class="personal-section">
+                        <div class="inputs">
+                            <label for="">Location<br><br>
+                                <input type="" class="input-personal" Value="Tehran" style="cursor:not-allowed" disabled></input>
+                            </label>
+                        </div>
+                        <div class="inputs">
+                            <label for="">Date<br><br>
+                                <input type="date" class="input-personal" style="cursor:text"></input>
+                            </label>
+                        </div>
+                        <div class="inputs">
+                            <label for="">Time<br><br>
+                                <input type="time" class="input-personal" style="cursor:text"></input>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <label for="drop-up" class="rental-label drop">
+                    <input type="radio" class="rental-radio" name="one" id="drop-up">Drop - Off
+                </label>
+                <div class="container-5">
+                    <div class="personal-section">
+                        <div class="inputs">
+                            <label for="">Location<br><br>
+                                <input type="" class="input-personal" Value="Tehran" style="cursor:not-allowed" disabled></input>
+                            </label>
+                        </div>
+                        <div class="inputs">
+                            <label for="">Date<br><br>
+                                <input type="date" class="input-personal" style="cursor:text"></input>
+                            </label>
+                        </div>
+                        <div class="inputs">
+                            <label for="">Time<br><br>
+                                <input type="time" class="input-personal" style="cursor:text"></input>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="payment-info">
+                <h3 class="header personal">
+                    Payment Method
+                </h3>
+                <p class="text personal-text">
+                    Please enter your payment method
+                </p>
+                <p class="steps">
+                    Step 3 of 4
+                </p>
+                <div class="container-6" id="container-6">
+                    <label for="visa-card" class="credit-label">
+                        <input type="radio" class="rental-radio cards" name="cards" id="visa-card" onclick="myFunction1()" checked />Credit Card
+                        <img src="../Car Rental imgs/visa.png" alt="" class="card-png">
+                    </label>
+                    <label for="visa-card-res" class="credit-label res-1">
+                        <input type="radio" class="rental-radio cards" name="cards-2" id="visa-card-res" onclick="myRes1()" checked />Credit Card
+                        <img src="../Car Rental imgs/visa.png" alt="" class="card-png">
+                        <img src="../Car Rental imgs/visa-res.png" alt="" class="card-png res visa">
+                    </label>
+                    <div class="slider">
+                        <div class="payment-inputs">
+                            <label for="">Card Number<br><br>
+                                <input type="number" class="input-payment" placeholder="Card number" maxlength="19"></input>
+                            </label>
+                        </div>
+                        <div class="payment-inputs-res">
+                            <label for="">Card Holder<br><br>
+                                <input type="text" class="input-payment" placeholder="Card Holder"></input>
+                            </label>
+                        </div>
+                        <div class="payment-inputs">
+                            <label for="">Experation Date<br><br>
+                                <input type="date" class="input-payment" style="cursor:text;"></input>
+                            </label>
+                        </div>
+                        <div class="payment-inputs">
+                            <label for="">Card Holder<br><br>
+                                <input type="text" class="input-payment" placeholder="Card Holder"></input>
+                            </label>
+                        </div>
+                        <div class="payment-inputs">
+                            <label for="">CVC<br><br>
+                                <input type="number" class="input-payment" placeholder="CVC" onKeyPress="if(this.value.length==3) return false;"></input>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-7" id="container-7">
+                    <label for="paypal-card" class="credit-label">
+                        <input type="radio" class="rental-radio cards" name="cards" onclick="myFunction2()" id="paypal-card">PayPal
+                        <img src="../Car Rental imgs/PayPal.png" alt="" class="card-png">
+                    </label>
+                    <label for="paypal-card-res" class="credit-label res-2">
+                        <input type="radio" class="rental-radio cards" name="cards-2" onclick="myRes2()" id="paypal-card-res">PayPal
+                        <img src="../Car Rental imgs/PayPal.png" alt="" class="card-png">
+                        <img src="../Car Rental imgs/PayPal-res.png" alt="" class="card-png res">
+                    </label>
+                    <div class="slider">
+                        <div class="payment-inputs">
+                            <label for="">Card Number<br><br>
+                                <input type="number" class="input-payment" placeholder="Card number"></input>
+                            </label>
+                        </div>
+                        <div class="payment-inputs-res">
+                            <label for="">Card Holder<br><br>
+                                <input type="text" class="input-payment" placeholder="Card Holder"></input>
+                            </label>
+                        </div>
+                        <div class="payment-inputs">
+                            <label for="">Experation Date<br><br>
+                                <input type="date" class="input-payment" style="cursor:text;"></input>
+                            </label>
+                        </div>
+                        <div class="payment-inputs">
+                            <label for="">Card Holder<br><br>
+                                <input type="text" class="input-payment" placeholder="Card Holder"></input>
+                            </label>
+                        </div>
+                        <div class="payment-inputs">
+                            <label for="">CVC<br><br>
+                                <input type="number" class="input-payment" placeholder="CVC" onKeyPress="if(this.value.length==3) return false;"></input>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-8" id="container-8">
+                    <label for="credit-card" class="credit-label">
+                        <input type="radio" class="rental-radio cards" name="cards" onclick="myFunction3()" id="credit-card">Bitcoin
+                        <img src="../Car Rental imgs/Bitcoin.png" alt="" class="card-png">
+                    </label>
+                    <label for="credit-card-res" class="credit-label res-3">
+                        <input type="radio" class="rental-radio cards" name="cards-2" onclick="myRes3()" id="credit-card-res">Bitcoin
+                        <img src="../Car Rental imgs/Bitcoin.png" alt="" class="card-png">
+                        <img src="../Car Rental imgs/Bitcoin-res.png" alt="" class="card-png res">
+                    </label>
+                    <div class="slider">
+                        <div class="payment-inputs">
+                            <label for="">Card Number<br><br>
+                                <input type="number" class="input-payment" placeholder="Card number"></input>
+                            </label>
+                        </div>
+                        <div class="payment-inputs-res">
+                            <label for="">Card Holder<br><br>
+                                <input type="text" class="input-payment" placeholder="Card Holder"></input>
+                            </label>
+                        </div>
+                        <div class="payment-inputs">
+                            <label for="">Experation Date<br><br>
+                                <input type="date" class="input-payment" style="cursor:text;"></input>
+                            </label>
+                        </div>
+                        <div class="payment-inputs">
+                            <label for="">Card Holder<br><br>
+                                <input type="text" class="input-payment" placeholder="Card Holder"></input>
+                            </label>
+                        </div>
+                        <div class="payment-inputs">
+                            <label for="">CVC<br><br>
+                                <input type="number" class="input-payment" placeholder="CVC" onKeyPress="if(this.value.length==3) return false;"></input>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="confirmation">
+                <h3 class="header personal">
+                    Confirmation
+                </h3>
+                <p class="text personal-text">
+                    We are getting to the end. Just few clicks and your rental is ready!
+                </p>
+                <p class="steps">
+                    Step 4 of 4
+                </p>
+                
+                    <input type="checkbox" class="checkbox-2-input" name="" id="checkbox-1">
+                    <label for="checkbox-1" class="checkbox-2-label">I agree with our <span class="res">terms and conditions</span> and <span class="res">privacy policy</span>!</label>
+                
+                    <input type="checkbox" class="checkbox-1-input" name="" id="checkbox-2" required>
+                    <label for="checkbox-2" class="checkbox-1-label">I agree with sending an Marketing and newsletter emails. No spam, promissed!</label>
+                <button class="rent-now" onclick="sendAlert()">Rent Now</button>
+                <img src="../Car Rental imgs/security-safety.png" alt="" class="security-pic">
+                <p class="text security-detail-1">All your data are safe</p>
+                <p class="text security-detail-2">We are using the most advanced security to provide you the best experience ever.</p>
+            </div>
+        </div>
+    </div>
+
+
+        <!-- section-5 -->
+    <div class="footer">
+        <div class="container-9">
+            <div class="leftfooter">
+                <div class="company-name-footer">
+                    MORENT
+                </div><br>
+                <div class="about-morent">
+                    Our vision is to provide convenience and help increase your sales business.
+                </div>
+            </div>
+            <div class="rightfooter">
+                <div class="right-footer-left">
+                    <div class="footer-title">About</div><br>
+                        <a href="#" class="footer-link">How it works</a><br>
+                        <a href="#" class="footer-link">Featured</a><br>
+                        <a href="#" class="footer-link">Partner ship</a><br>
+                        <a href="#" class="footer-link">Business Relation</a>
+                </div>
+                <div class="right-footer-middle">
+                    <div class="footer-title">Community</div><br>
+                        <a href="#" class="footer-link">Events</a><br>
+                        <a href="#" class="footer-link">Blog</a><br>
+                        <a href="#" class="footer-link">Podcast</a><br>
+                        <a href="#" class="footer-link">Invite a friend</a>
+                </div>
+                <div class="right-footer-right">
+                    <div class="footer-title">Socials</div><br>
+                        <a href="#" class="footer-link">Disocrd</a><br>
+                        <a href="#" class="footer-link">Instagram</a><br>
+                        <a href="https://t.me/TookOver" target="_blank" class="footer-link">Telegram</a><br>
+                        <a href="#" class="footer-link">Facebook</a>
+                </div>
+            </div>
+            <!-- res -->
+            <div class="rightfooter-res">
+                <div class="right-footer-left">
+                    <div class="footer-title">About</div><br>
+                        <a href="#" class="footer-link">How it works</a><br>
+                        <a href="#" class="footer-link">Featured</a><br>
+                        <a href="#" class="footer-link">Partner ship</a><br>
+                        <a href="#" class="footer-link">Business Relation</a>
+                </div>
+                <div class="right-footer-right">
+                    <div class="footer-title">Socials</div><br>
+                        <a href="#" class="footer-link">Disocrd</a><br>
+                        <a href="#" class="footer-link">Instagram</a><br>
+                        <a href="https://t.me/TookOver" target="_blank" class="footer-link">Telegram</a><br>
+                        <a href="#" class="footer-link">Facebook</a>
+                </div>
+                <div class="right-footer-middle">
+                    <div class="footer-title">Community</div><br>
+                        <a href="#" class="footer-link">Events</a><br>
+                        <a href="#" class="footer-link">Blog</a><br>
+                        <a href="#" class="footer-link">Podcast</a><br>
+                        <a href="#" class="footer-link">Invite a friend</a>
+                </div>
+            <!-- /res -->
+            </div>
+        <div class="hr-footer"></div>
+        <div class="bottomfooter">
+            <div class="all-rights-reserved">©2022 MORENT. All rights reserved</div>
+            <a href="#" class="terms">Terms & Condition</a>
+            <a href="#" class="privacy">Privacy & Policy</a>
+        </div>
+        <div class="bottomfooter-res">
+            <a href="#" class="terms">Terms & Condition</a>
+            <a href="#" class="privacy">Privacy & Policy</a><br><br>
+            <div class="all-rights-reserved">©2022 MORENT. All rights reserved</div>
+        </div>
+    </div>
+    </ul>
+</body>
+</html>
+</body>
+</html>
