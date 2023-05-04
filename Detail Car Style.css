@@ -108,7 +108,7 @@ body {
 }
 
 .mycontainer {
-    height:2100px;
+    height:2250px;
     overflow:hidden;
 }
 .filter-box {
@@ -331,14 +331,28 @@ label {
     font-size:32px;
     color:rgba(26, 32, 44, 1);
 }
-button.red-like {
-    position:absolute;
-    right:2.5%;
+.favorite-button {
+    position:relative;
+    right:-40%;
     top:20px;
-    background:#0000;
-    outline:none;
+    width:20px;
+    height:20px;
     border:none;
+    outline:none;
+    background:#0000;
     cursor:pointer;
+    transform:scale(1.6);
+    color:lightgray;
+}
+.favorite-button.detail-button {
+    right:-92%;
+    top:30px;
+}
+.fa {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
 }
 .stars-container {
     width:50%;
@@ -581,7 +595,7 @@ button.star-button {
     position:relative;
     width:26%;
     margin:1.75%;
-    height:388px;
+    height:440px;
     background-color:White;
     border:1px solid white;
     border-radius:10px;
@@ -597,11 +611,6 @@ button.star-button {
     position:absolute;
     top:32px;
     left:6%;
-}
-.red-like {
-    position:absolute;
-    right:6%;
-    top:20px;
 }
 .section-2 {
     position: absolute;
@@ -1328,6 +1337,9 @@ button.star-button {
     }
     .off-price {
         font-size:12px;
+    }
+    .favorite-button.detail-button {
+        right:-88%;
     }
 }
 

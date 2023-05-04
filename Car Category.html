@@ -12,6 +12,7 @@
     <link rel="icon" href="Car Rental imgs/command.png">
     <script src="Car Category Script.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Plus Jakarta Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     
@@ -166,7 +167,7 @@
                 <div class="section-1">
                     <h3 class="car-name">Koenigsegg</h3>
                     <p class="car-class">Sport</p>
-                    <a href="#"><img src="Car Rental imgs/red-like.png" alt="" class="red-like"></a>
+                    <button onclick="favorited1()" class="favorite-button" id="favorite1" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button>
                 </div>
                 <div class="section-2">
                     <img src="Car Rental imgs/car-1.png" alt="" class="car-pic"></div>
@@ -192,7 +193,7 @@
                 <div class="section-1">
                     <h3 class="car-name">Nissan GT-R</h3>
                     <p class="car-class">Sport</p>
-                    <a href="#"><img src="Car Rental imgs/transparent-like.png" alt="" class="red-like"></a>
+                    <button onclick="favorited2()" class="favorite-button" id="favorite2" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button>
                 </div>
                 <div class="section-2">
                     <a><img src="Car Rental imgs/car-2.png" alt="" class="car-pic"></div>
@@ -219,7 +220,7 @@
                 <div class="section-1">
                     <h3 class="car-name">Rolls - Royce</h3>
                     <p class="car-class">Sedan</p>
-                    <a href="#"><img src="Car Rental imgs/red-like.png" alt="" class="red-like"></a>
+                    <button onclick="favorited3()" class="favorite-button" id="favorite3" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button>
                 </div>
                 <div class="section-2">
                     <a><img src="Car Rental imgs/car-3.png" alt="" class="car-pic"></div>
@@ -245,7 +246,7 @@
                 <div class="section-1">
                     <h3 class="car-name">Nissan GT-R</h3>
                     <p class="car-class">Sport</p>
-                    <a href="#"><img src="Car Rental imgs/transparent-like.png" alt="" class="red-like"></a>
+                    <button onclick="favorited4()" class="favorite-button" id="favorite4" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button>
                 </div>
                 <div class="section-2">
                     <img src="Car Rental imgs/car-4.png" alt="" class="car-pic"></div>
@@ -272,7 +273,7 @@
                 <div class="section-1">
                     <h3 class="car-name">All New Rush</h3>
                     <p class="car-class">SUV</p>
-                    <a href="#"><img src="Car Rental imgs/transparent-like.png" alt="" class="red-like"></a>
+                    <button onclick="favorited5()" class="favorite-button" id="favorite5" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button>
                 </div>
                 <div class="section-2">
                     <img src="Car Rental imgs/car-5.png" alt="" class="car-pic"></div>
@@ -299,7 +300,7 @@
                 <div class="section-1">
                     <h3 class="car-name">CR - V</h3>
                     <p class="car-class">SUV</p>
-                    <a href="#"><img src="Car Rental imgs/red-like.png" alt="" class="red-like"></a>
+                    <button onclick="favorited6()" class="favorite-button" id="favorite6" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button>
                 </div>
                 <div class="section-2">
                     <a><img src="Car Rental imgs/car-6.png" alt="" class="car-pic"></div>
@@ -325,7 +326,7 @@
                 <div class="section-1">
                     <h3 class="car-name">All New Terios</h3>
                     <p class="car-class">SUV</p>
-                    <a href="#"><img src="Car Rental imgs/transparent-like.png" alt="" class="red-like"></a>
+                    <button onclick="favorited7()" class="favorite-button" id="favorite7" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button>
                 </div>
                 <div class="section-2">
                     <a><img src="Car Rental imgs/car-7.png" alt="" class="car-pic"></div>
@@ -352,7 +353,7 @@
                 <div class="section-1">
                     <h3 class="car-name">CR - V</h3>
                     <p class="car-class">SUV</p>
-                    <a href="#"><img src="Car Rental imgs/red-like.png" alt="" class="red-like"></a>
+                    <button onclick="favorited8()" class="favorite-button" id="favorite8" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button>
                 </div>
                 <div class="section-2">
                     <img src="Car Rental imgs/car-8.png" alt="" class="car-pic"></div>
@@ -378,7 +379,7 @@
                 <div class="section-1">
                     <h3 class="car-name">MG ZX Exclusice</h3>
                     <p class="car-class">Hatchback</p>
-                    <a href="#"><img src="Car Rental imgs/red-like.png" alt="" class="red-like"></a>
+                    <button onclick="favorited9()" class="favorite-button" id="favorite9" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button>
                 </div>
                 <div class="section-2">
                     <img src="Car Rental imgs/car-9.png" alt="" class="car-pic"></div>
@@ -404,7 +405,7 @@
                 <div class="section-1">
                     <h3 class="car-name">New MG ZS</h3>
                     <p class="car-class">SUV</p>
-                    <a href="#"><img src="Car Rental imgs/transparent-like.png" alt="" class="red-like"></a>
+                    <button onclick="favorited10()" class="favorite-button" id="favorite10" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button>
                 </div>
                 <div class="section-2">
                     <a><img src="Car Rental imgs/car-10.png" alt="" class="car-pic"></div>
@@ -430,7 +431,7 @@
                 <div class="section-1">
                     <h3 class="car-name">MG ZX Excite</h3>
                     <p class="car-class">Hatchback</p>
-                    <a href="#"><img src="Car Rental imgs/red-like.png" alt="" class="red-like"></a>
+                    <button onclick="favorited11()" class="favorite-button" id="favorite11" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button>
                 </div>
                 <div class="section-2">
                     <a><img src="Car Rental imgs/car-11.png" alt="" class="car-pic"></div>
@@ -456,7 +457,7 @@
                 <div class="section-1">
                     <h3 class="car-name">New MG ZS</h3>
                     <p class="car-class">SUV</p>
-                    <a href="#"><img src="Car Rental imgs/transparent-like.png" alt="" class="red-like"></a>
+                    <button onclick="favorited12()" class="favorite-button" id="favorite12" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button>
                 </div>
                 <div class="section-2">
                     <img src="Car Rental imgs/car-12.png" alt="" class="car-pic"></div>
@@ -562,7 +563,7 @@
             <div class="all-rights-reserved">©2022 MORENT. All rights reserved</div>
         </div>
     </div>
-
+    <script src="Car Rental.js"></script>
 
 
 </body>
