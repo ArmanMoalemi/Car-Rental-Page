@@ -11,6 +11,7 @@
     <!-- <link href="Car Category Style.css" rel="stylesheet"> -->
     <link rel="icon" href="../Car Rental imgs/command.png">
     <link href='https://fonts.googleapis.com/css?family=Plus Jakarta Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="Preview.js"></script>
 </head>
 <body>
@@ -170,7 +171,7 @@
                 <h2 class="hcar-detail">
                     Rolls Royce
                 </h2>
-                <button class="red-like"><img src="../Car Rental imgs/red-like.png" alt=""></button>
+                <button onclick="favorited1()" class="favorite-button detail-button" id="favorite1" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button>
                 <div class="stars-container">
                     <div class="review-star">
                         <button class="star-button"><img src="../Car Rental imgs/colored-star.png" class="stars" alt=""></button>
@@ -341,7 +342,7 @@
                 <div class="section-1">
                     <h3 class="car-name">Koenigsegg</h3>
                     <p class="car-class">Sport</p>
-                    <a href="#"><img src="../Car Rental imgs/red-like.png" alt="" class="red-like"></a>
+                    <button onclick="favorited7()" class="favorite-button" id="favorite7" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button>
                 </div>
                 <div class="section-2">
                     <img src="../Car Rental imgs/car-1.png" alt="" class="car-pic"></div>
@@ -360,14 +361,14 @@
                         <div class="buy-price">
                             $99.00/<span style="color:#90A3BF;">day</span>
                         </div>
-                        <button class="rent-now"  onclick="location.href='Koenigsegg-preview.html'">Rent-Now</button>
+                        <button class="rent-now" onclick="location.href='Koenigsegg-preview.html'">Rent-Now</button>
                 </div>
             </div>
             <div class="rent-popular" id="sportTwo">
                 <div class="section-1">
                     <h3 class="car-name">Nissan GT-R</h3>
                     <p class="car-class">Sport</p>
-                    <a href="#"><img src="../Car Rental imgs/transparent-like.png" alt="" class="red-like"></a>
+                    <button onclick="favorited2()" class="favorite-button" id="favorite2" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button>
                 </div>
                 <div class="section-2">
                     <a><img src="../Car Rental imgs/car-2.png" alt="" class="car-pic"></div>
@@ -394,7 +395,7 @@
                 <div class="section-1">
                     <h3 class="car-name">Rolls - Royce</h3>
                     <p class="car-class">Sedan</p>
-                    <a href="#"><img src="../Car Rental imgs/red-like.png" alt="" class="red-like"></a>
+                    <button onclick="favorited3()" class="favorite-button" id="favorite3" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button>
                 </div>
                 <div class="section-2">
                     <a><img src="../Car Rental imgs/car-3.png" alt="" class="car-pic"></div>
@@ -413,7 +414,7 @@
                         <div class="buy-price">
                             $96.00/<span style="color:#90A3BF;">day</span>
                         </div>
-                        <button class="rent-now">Rent-Now</button>
+                        <button class="rent-now" onclick="location.href='rolls-royce-preview.html'">Rent-Now</button>
                 </div>
             </div>
         </div>
@@ -430,7 +431,7 @@
                 <div class="section-1">
                     <h3 class="car-name">All New Rush</h3>
                     <p class="car-class">SUV</p>
-                    <a href="#"><img src="../Car Rental imgs/transparent-like.png" alt="" class="red-like"></a>
+                    <button onclick="favorited4()" class="favorite-button" id="favorite4" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button>
                 </div>
                 <div class="section-2">
                     <img src="../Car Rental imgs/car-5.png" alt="" class="car-pic"></div>
@@ -450,14 +451,14 @@
                             $72.00/<span style="color:#90A3BF;">day</span>
                         </div>
                         <div class="buy-price-off"><del>$80.00</del></div>
-                        <button class="rent-now"  onclick="location.href='all-new-rush-preview.html'">Rent-Now</button>
+                        <button class="rent-now">Rent-Now</button>
                 </div>
             </div>
             <div class="rent-popular" id="mySuv-2">
                 <div class="section-1">
                     <h3 class="car-name">CR - V</h3>
                     <p class="car-class">SUV</p>
-                    <a href="#"><img src="../Car Rental imgs/red-like.png" alt="" class="red-like"></a>
+                    <button onclick="favorited5()" class="favorite-button" id="favorite5" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button>
                 </div>
                 <div class="section-2">
                     <a><img src="../Car Rental imgs/car-6.png" alt="" class="car-pic"></div>
@@ -476,14 +477,14 @@
                         <div class="buy-price">
                             $80.00/<span style="color:#90A3BF;"><span style="color:#90A3BF;">day</span>
                         </div>
-                        <button class="rent-now"  onclick="location.href='cr-v-preview.html'">Rent-Now</button>
+                        <button class="rent-now"onclick="location.href='cr-v-preview.html'">Rent-Now</button>
                 </div>
             </div>
             <div class="rent-popular" id="mySuv-3">
                 <div class="section-1">
                     <h3 class="car-name">All New Terios</h3>
                     <p class="car-class">SUV</p>
-                    <a href="#"><img src="../Car Rental imgs/transparent-like.png" alt="" class="red-like"></a>
+                    <button onclick="favorited6()" class="favorite-button" id="favorite6" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button>
                 </div>
                 <div class="section-2">
                     <a><img src="../Car Rental imgs/car-7.png" alt="" class="car-pic"></div>
@@ -502,13 +503,12 @@
                         <div class="buy-price">
                             $74.00/<span style="color:#90A3BF;">day</span>
                         </div>
-                        <button class="rent-now"  onclick="location.href='all-new-rush-preview.html'">Rent-Now</button>
+                        <button class="rent-now">Rent-Now</button>
                 </div>
             </div>
         </div> 
     </div>
 </div>
-
 
         <!-- footer -->
     <div class="footer">
@@ -582,5 +582,6 @@
         </div>
     </div>
     </ul>
+    <script src="../Car Rental.js"></script>
 </body>
 </html>
