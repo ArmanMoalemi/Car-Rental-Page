@@ -19,7 +19,6 @@ body {
     display:flex;
     width:1000px;
     height:640px;
-    margin-bottom:60px;
     background-color:rgba(255, 255, 255, 1);
     border-radius:20px;
     box-shadow: 22px 20px 9px -5px rgba(0,0,0,0.1),6px -7px 16px -3px rgba(0,0,0,0.1);
@@ -27,6 +26,8 @@ body {
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
+    margin-bottom:30px;
+    margin-top:30px;
 }
 .container-1-1 {
     flex:43.5%;
