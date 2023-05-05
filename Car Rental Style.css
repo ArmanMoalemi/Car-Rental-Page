@@ -97,6 +97,15 @@ body {
 .profile:hover {
     border:1px solid rgb(122, 194, 230);
 }
+.profile.res-1, .profile.res-2, .profile.res-3, .profile.fourth {
+    display:none;
+}
+.profile.sign-in {
+    color:gray;
+}
+.profile.sign-in:hover {
+    border:1px solid gray;
+}
 .profile.fourth {
     margin-right:0;
 }
@@ -536,6 +545,9 @@ body {
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
+}
+.fa.fa-sign-in {
+    font-size:30px;
 }
 .section-2, .section-2-rec {
     position: absolute;
@@ -996,8 +1008,12 @@ body {
     .profile.res-1, .profile.res-2, .profile.res-3 {
         display:none;
     }
-    .profile.fourth {
+    .profile.fourth, .profile.sign-in {
         width:28px;
+        border:none;
+    }
+    .profile.fourth, .profile.sign-in:hover {
+        border:none;
     }
     .profimg.profile-image {
         width:28px;
