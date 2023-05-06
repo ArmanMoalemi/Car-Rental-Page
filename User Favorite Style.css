@@ -1,0 +1,21 @@
+.vh {
+    width:100%;
+    height:100vh
+}
+.container-4-recomendation, .container-4-recomendation-2  {
+    margin-top:0;
+}
+.profile.res-1, .profile.res-2, .profile.res-3, .profile.fourth {
+    display:inline-block;
+}
+.profile.res-1 {
+    border:1px solid rgb(122, 194, 230);
+}
+@media screen and (max-width:650px) {
+    .rent-recomendation.four, .rent-recomendation.five, .rent-recomendation.eight {
+        display:inline-block;
+    }
+    .profile.res-1, .profile.res-2, .profile.res-3 {
+        display:none;
+}
+}
