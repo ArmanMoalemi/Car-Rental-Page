@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    -webkit-user-drag: none;
 }
 body {
     margin:0;
