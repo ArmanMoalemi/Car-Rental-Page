@@ -1,10 +1,12 @@
 * {
     box-sizing: border-box;
+    -webkit-user-drag: none;
 }
 body {
     margin:0;
     background-color: #F6F7F9;
     cursor:default;
+    -webkit-user-select:none;
     user-select:none;
 }
 .nav {
@@ -99,6 +101,18 @@ body {
 }
 .profile.fourth {
     margin-right:0;
+}
+.profile.res-1, .profile.res-2, .profile.res-3, .profile.fourth {
+    display:none;
+}
+.profile.sign-in {
+    color:gray;
+}
+.profile.sign-in:hover {
+    border:1px solid gray;
+}
+.fa.fa-sign-in {
+    font-size:30px;
 }
 .profimg {
     position:absolute;
@@ -892,7 +906,7 @@ button.star-button {
 }
 @media screen and (max-width:1401px) {
     .mycontainer {
-        height:2640px;
+        height:2740px;
     }
     .car-pic-container-1 {
         width:100%;
@@ -1118,6 +1132,13 @@ button.star-button {
     }
     .profile.res-1, .profile.res-2, .profile.res-3 {
         display:none;
+    }
+    .profile.fourth, .profile.sign-in {
+        width:28px;
+        border:none;
+    }
+    .profile.fourth, .profile.sign-in:hover {
+        border:none;
     }
     .profile.fourth {
         width:28px;
