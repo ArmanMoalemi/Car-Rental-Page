@@ -159,6 +159,9 @@ body {
     background-color: rgba(53, 99, 233, 1);
     color:white;
 }
+.btn.btn-1:not(:first-child), .btn.btn-2:not(:first-child) {
+    margin-top:10px;
+}
 svg {
     width:24px;
     height:24px;
