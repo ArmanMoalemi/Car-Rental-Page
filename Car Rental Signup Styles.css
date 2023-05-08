@@ -26,6 +26,7 @@ body {
     left:50%;
     transform:translate(-50%,0);
     margin-top:100px;
+    margin-bottom:60px;
 }
 .container-1-1 {
     flex:43.5%;
