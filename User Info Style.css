@@ -112,7 +112,19 @@ body {
     left:50%;
     transform:translate(-50%,-50%);
 }
+.toggle-sidebar {
+    border:none;
+    color:rgba(89, 103, 128, 1);
+    padding-top:4px;
+    margin-left:6%;
+    cursor:pointer;
+    background:#0000;
+    outline:none;
+    font-size:24px;
+    padding:6px 16px;
 
+    display:none;
+}
 
 .side-bar {
     width:18%;
@@ -120,6 +132,7 @@ body {
     background-color:#FFFFFF;
     position:relative;
     z-index:0;
+    transition:0.3s ease-in-out;
 }
 .container-1, .container-2, .container-3 {
     width:92%;
@@ -152,12 +165,18 @@ body {
     font-family:plus jakarta sans;
     font-size:16px;
     color:rgba(144, 163, 191, 1);
+    display:block;
+    width:100%;
+    text-align:left;
     
     transition:background-color 0.15s ease-in-out, color 0.15s ease-in-out;
 }
-.btn:is(:focus, :hover) {
+.btn.btn-1:is(:focus, :hover):not(:first-child), .btn.btn-2:is(:focus, :hover), .btn.btn-3:is(:focus, :hover) {
     background-color: rgba(53, 99, 233, 1);
     color:white;
+}
+.btn.btn-1:first-child {
+    border-bottom:4px solid rgba(53, 99, 233, 1);
 }
 .btn.btn-1:not(:first-child), .btn.btn-2:not(:first-child) {
     margin-top:10px;
@@ -166,11 +185,12 @@ svg {
     width:24px;
     height:24px;
     vertical-align: middle;
+    display: inline-block;
 }
 svg path {
     fill:rgba(144, 163, 191, 1);
 }
-.btn:hover svg path {
+.btn:is(:hover, :focus) svg:not(.dashboard) path {
     fill: white;
 }
 .dash-title {
@@ -180,13 +200,30 @@ svg path {
 }
 
 
-
+@media screen and (max-width:1040px) {
+    .side-bar {
+        width:23%;
+    }
+}
 @media screen and (max-width:850px) {
     .navli.li-2 {
         left:24%;
     }
     .search-nav {
         width:340px;
+    }
+}
+@media screen and (max-width:812px) {
+    .side-bar {
+        width:25%;
+    }
+    .btn {
+        font-size:14px;
+        padding:10px;
+    }
+    svg {
+        width:20px;
+        height:20px;
     }
 }
 @media screen and (max-width:754px) {
@@ -199,14 +236,20 @@ svg path {
     }
 }
 @media screen and (max-width:650px) {
+    .toggle-sidebar {
+        display:inline-block;
+        margin-top:36px;
+    }
     .nav {
-        height:200px;
+        height:250px;
     }
     .navli.li-1 {
         margin-left:8%;
+        margin-top:44px;
     }
     .navli.li-3 {
         height:28px;
+        top:46px;
     }
     .company-name {
         font-size:24px;
@@ -233,11 +276,12 @@ svg path {
         margin-left:6%;
         border-radius:10px;
         padding-right:5px;
-
+        top:50px;
     }
     .search-submit {
         margin-left:6%;
         height:48px;
+        top:50px;
     }
     .filter {
         margin-left:5px;
@@ -248,8 +292,25 @@ svg path {
         border-radius: 10px;
         float:left;
         transition: border 0.3s ease-in-out;
+        margin-top:50px;
     }
     .filter:hover {
         border:1px solid rgb(122, 194, 230);
+    }
+    .side-bar {
+        width:100%;
+        overflow:hidden;
+        height:0px;
+    }
+    .btn {
+        text-align:center;
+        padding:14px;
+    }
+    .dash-title {
+        margin-left:10px;
+    }
+    .container-3 {
+        position:static;
+        margin-top:10px;
     }
 }    
