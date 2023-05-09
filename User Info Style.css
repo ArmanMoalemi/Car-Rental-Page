@@ -127,6 +127,7 @@ body {
 }
 
 .side-bar {
+    float:left;
     width:18%;
     height:89vh;
     background-color:#FFFFFF;
@@ -198,6 +199,210 @@ svg path {
     margin-left:5%;
     vertical-align: middle;
 }
+
+.container-4 {
+    width:35%;
+    float:left;
+    background-color:white;
+    border-radius:10px;
+    margin-left:1.7%;
+    margin-top:30px;
+}
+.header-2 {
+    font-family:plus jakarta sans;
+    font-size:20px;
+    font-weight:700;
+    color:rgba(26, 32, 44, 1);
+    display:block;
+    margin-top:20px;
+    margin-left:4%;
+}
+.container-4-1 {
+    float:left;
+    margin-left:4%;
+    margin-top:30px;
+    width:44%;
+    height:220px;
+    margin-bottom:20px;
+}
+.container-4-1-1 {
+    width:220px;
+    height:220px;
+    position:relative;
+}
+.chart-count {
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    font-size:24px;
+    font-family:plus jakarta sans;
+    color:rgba(26, 32, 44, 1);
+    font-weight:700;
+}
+span.rental {
+    font-size:14px;
+    font-weight:500;
+    color:rgba(144, 163, 191, 1);
+}
+.container-4-2 {
+    width:49%;
+    float:left;
+    margin-top:30px;
+    height:220px;
+}
+.container-4-2-1 {
+    display:block;
+}
+.container-4-2-1:not(:first-child) {
+    margin-top:28px;
+}
+.mark, .car-type, .rent-count {
+    display:inline-block;
+}
+.mark {
+    width:12px;
+    height:12px;
+    border-radius:50%;
+}
+.mark.sport {
+    background-color:rgba(13, 53, 89, 1);
+}
+.mark.suv {
+    background-color:rgba(23, 93, 156, 1);
+}
+.mark.coupe {
+    background-color:rgba(33, 133, 222, 1);
+}
+.mark.hatchback {
+    background-color:rgba(99, 169, 232, 1);
+}
+.mark.mpv {
+    background-color:rgba(166, 206, 242, 1);
+}
+.car-type {
+    font-family:plus jakarta sans;
+    color:14px;
+    color:rgba(144, 163, 191, 1);
+    margin-left:3%;
+}
+.rent-count {
+    float:right;
+    font-family:plus jakarta sans;
+    font-size:14px;
+    font-weight:600;
+    color:rgba(26, 32, 44, 1);
+}
+
+
+.container-5 {
+    width:42%;
+    float:left;
+    margin-left:1.7%;
+    margin-top:30px;
+    background-color:white;
+    border-radius:10px;
+}
+.container-5-1 {
+    width:94%;
+    margin:auto;
+    margin-top:20px;
+}
+.header-3 , .view-all {
+    display:inline-block;
+}
+.header-3 {
+    font-family:plus jakarta sans;
+    font-size:20px;
+    font-weight:700;
+    color:rgba(26, 32, 44, 1);
+}
+.view-all {
+    border:none;
+    outline:none;
+    background:#0000;
+    font-family:plus jakarta sans;
+    font-size:12px;
+    color:rgba(53, 99, 233, 1);
+    float:right;
+    cursor:pointer;
+    position:relative;
+    padding:4px;
+}
+.view-all::before {
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    border-bottom:2px solid rgba(53, 99, 233, 1);
+
+    transform: scaleX(0);
+    transform-origin:center;
+
+    transition:transform 0.2s ease-in-out;
+}
+.view-all:is(:hover, :focus)::before {
+    transform:scaleX(0.85);
+}
+.container-5-2 {
+    width:91%;
+    margin:auto;
+}
+.container-5-2-1 {
+    padding-top:30px;
+    padding-bottom:30px;
+}
+.container-5-2-1:not(:last-child) {
+    border-bottom:1px solid rgba(195, 212, 233, 0.4);
+}
+.car {
+    width:22%;
+    display:inline-block;
+}
+/* .car-img {
+    width:114px;
+    height:36px;
+} */
+.car-name, .date {
+    display:inline-block;
+}
+.car-price, .car-type {
+    display:inline-block;
+}
+.container-5-2-2 {
+    width:77%;
+    display:inline-block;
+    margin-top:10px;
+}
+.container-5-2-3 {
+    width:100%;
+}
+.container-5-2-3:last-child {
+    margin-top:8px;
+}
+.date, .car-price {
+    float:right;
+}
+.car-name, .date , .car-price {
+    font-family:plus jakarta sans;
+}
+.car-name, .car-price {
+    font-size:16px;
+    font-weight:700;
+    color:rgba(26, 32, 44, 1);
+}
+.date {
+    font-size:12px;
+    color:rgba(144, 163, 191, 1);
+}
+.car-type.recent {
+    font-size:12px;
+    margin:0;
+}
+
 
 
 @media screen and (max-width:1040px) {
