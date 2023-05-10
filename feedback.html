@@ -1,0 +1,28 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title> Feedback Test (JavaScript)</title>
+</head>
+<body>
+	<h1> Let's see another taste of javascript (Im really interested to it).</h1>
+	<p>Did you like my website?</p>
+	<img id="thinKing" src="thinking.gif" width="499px" height="365px">
+	<p class="m2">
+		<button type="button" onclick="thumb(0)" >It's Like Sh*t &#128078;</button>
+		<button type="button" onclick="thumb(1)">Hell yea &#128077;</button> 
+	</p>
+	<script>
+		function thumb(sw) {
+		var pic;
+		if (sw == 0){
+			pic = "ThumbDown.gif"
+		}
+		else {
+			pic = "ThumbUp.gif"
+		}
+		document.getElementById("thinKing").src = pic;
+		}
+	</script>
+</body>
+</html>
