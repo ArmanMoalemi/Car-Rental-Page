@@ -45,7 +45,6 @@ body {
     padding:0;
     font-family:Plus Jakarta Sans;
     font-weight:700;
-    user-select: none;
     text-decoration:none;
     color:#3563E9;
 }
@@ -1259,7 +1258,9 @@ button.star-button {
 
 @media screen and (max-width:562px) {
     .selector-container {
-        width:100%;
+        width:86%;
+        margin:auto;
+        margin-top:16px;
         white-space: nowrap;
         overflow:auto;
     }
