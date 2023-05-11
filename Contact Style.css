@@ -8,11 +8,11 @@
 .btn.btn-1:nth-child(3) {
     border-bottom:4px solid rgba(53, 99, 233, 1);
 }
-.btn.btn-1:nth-child(3):hover {
+.btn.btn-1:nth-child(3):is(:hover, :focus) {
     background-color:#0000;
     color:rgba(144, 163, 191, 1);
 }
-.btn.btn-1:nth-child(3):hover svg.contact path {
+.btn.btn-1:nth-child(3):is(:hover, :focus) svg.contact path {
     fill:rgba(144, 163, 191, 1);
 }
 .container-6 {
